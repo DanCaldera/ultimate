@@ -9,5 +9,5 @@
       "extensions": ["ms-azuretools.vscode-docker", "esbenp.prettier-vscode"]
     }
   },
-  "postCreateCommand": "cd $CODESPACE_VSCODE_FOLDER/frontend-react-js && npm install\ncd $CODESPACE_VSCODE_FOLDER/backend-nest-js && npm install"
+  "postCreateCommand": "cd ./frontend-react-js && npm i && cd ../backend-nest-js && npm i"
 }
