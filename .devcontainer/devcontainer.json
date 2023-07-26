@@ -2,7 +2,8 @@
   "name": "Ultimate Configuration",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "features": {
-    "ghcr.io/devcontainers/features/aws-cli:1": {}
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+      "ghcr.io/devcontainers-contrib/features/postgres-asdf:1": {}
   },
   "customizations": {
     "vscode": {
