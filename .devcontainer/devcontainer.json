@@ -1,0 +1,7 @@
+{
+  "name": "Ultimate Configuration",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {}
+	}
+}
