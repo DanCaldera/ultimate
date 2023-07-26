@@ -1,0 +1,3 @@
+FROM node:20.5
+
+ENV PORT=4000
