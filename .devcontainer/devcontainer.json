@@ -9,5 +9,5 @@
       "extensions": ["ms-azuretools.vscode-docker", "esbenp.prettier-vscode"]
     }
   },
-  "postCreateCommand": "./aws/startup.sh"
+  "postCreateCommand": "./scripts/codespace-startup.sh"
 }
