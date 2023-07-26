@@ -2,14 +2,12 @@
   "name": "Ultimate Configuration",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "features": {
-		"ghcr.io/devcontainers/features/aws-cli:1": {}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"ms-azuretools.vscode-docker"
-			]
-		}
-	},
-	"postCreateCommand": "./aws/startup.sh"
+    "ghcr.io/devcontainers/features/aws-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker", "esbenp.prettier-vscode"]
+    }
+  },
+  "postCreateCommand": "./aws/startup.sh"
 }
