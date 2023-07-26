@@ -1,6 +1,8 @@
 version: '3.8'
 services:
   backend-nest-js:
+    environment:
+      CONNECTION_URL: "postgresql://postgres:password@localhost:5432/example"
     build: ./backend-nest-js
     ports:
       - "3000:3000"
@@ -12,3 +14,16 @@ services:
       - "5173:5173"
     volumes:
       - ./frontend-react-js:/frontend-react-js
+  db:
+    image: postgres:15.3
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - '5432:5432'
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
