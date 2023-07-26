@@ -11,5 +11,5 @@
 			]
 		}
 	},
-	"postCreateCommand": "cd ./frontend-react-js && npm install"
+	"postCreateCommand": "./aws/startup.sh"
 }
