@@ -9,5 +9,5 @@
       "extensions": ["ms-azuretools.vscode-docker", "esbenp.prettier-vscode"]
     }
   },
-  "postCreateCommand": "bash ./scripts/codespace-startup.sh"
+  "postCreateCommand": "cd $CODESPACE_VSCODE_FOLDER/frontend-react-js && npm install\ncd $CODESPACE_VSCODE_FOLDER/backend-nest-js && npm install"
 }
